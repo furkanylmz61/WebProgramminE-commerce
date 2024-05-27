@@ -1,0 +1,14 @@
+/Users/furkanyilmaz/Projects/WebProgrammingMVC/Entites/bin/Debug/net7.0/Entities.deps.json
+/Users/furkanyilmaz/Projects/WebProgrammingMVC/Entites/bin/Debug/net7.0/Entities.runtimeconfig.json
+/Users/furkanyilmaz/Projects/WebProgrammingMVC/Entites/bin/Debug/net7.0/Entities.dll
+/Users/furkanyilmaz/Projects/WebProgrammingMVC/Entites/bin/Debug/net7.0/Entities.pdb
+/Users/furkanyilmaz/Projects/WebProgrammingMVC/Entites/obj/Debug/net7.0/Entities.csproj.AssemblyReference.cache
+/Users/furkanyilmaz/Projects/WebProgrammingMVC/Entites/obj/Debug/net7.0/Entities.GeneratedMSBuildEditorConfig.editorconfig
+/Users/furkanyilmaz/Projects/WebProgrammingMVC/Entites/obj/Debug/net7.0/Entities.AssemblyInfoInputs.cache
+/Users/furkanyilmaz/Projects/WebProgrammingMVC/Entites/obj/Debug/net7.0/Entities.AssemblyInfo.cs
+/Users/furkanyilmaz/Projects/WebProgrammingMVC/Entites/obj/Debug/net7.0/Entities.csproj.CoreCompileInputs.cache
+/Users/furkanyilmaz/Projects/WebProgrammingMVC/Entites/obj/Debug/net7.0/Entities.dll
+/Users/furkanyilmaz/Projects/WebProgrammingMVC/Entites/obj/Debug/net7.0/refint/Entities.dll
+/Users/furkanyilmaz/Projects/WebProgrammingMVC/Entites/obj/Debug/net7.0/Entities.pdb
+/Users/furkanyilmaz/Projects/WebProgrammingMVC/Entites/obj/Debug/net7.0/Entities.genruntimeconfig.cache
+/Users/furkanyilmaz/Projects/WebProgrammingMVC/Entites/obj/Debug/net7.0/ref/Entities.dll

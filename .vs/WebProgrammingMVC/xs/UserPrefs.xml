@@ -1,0 +1,44 @@
+﻿<Properties StartupConfiguration="{DA483762-E942-46EB-B145-4D88B8AF3476}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.WebProgrammingMVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebProgrammingMVC/Program.cs">
+    <Files>
+      <File FileName="WebProgrammingMVC/Views/Shared/_Layout.cshtml" />
+      <File FileName="WebProgrammingMVC/Views/Shared/_ValidationScriptsPartial.cshtml" />
+      <File FileName="WebProgrammingMVC/Program.cs" Line="33" Column="1" />
+      <File FileName="WebProgrammingMVC/Views/Home/Index.cshtml" />
+      <File FileName="WebProgrammingMVC/wwwroot/css/site.css" />
+      <File FileName="Entites/IEntity.cs" />
+      <File FileName="Entites/Category.cs" />
+      <File FileName="Entites/Contact.cs" />
+      <File FileName="Entites/News.cs" />
+      <File FileName="Entites/Post.cs" />
+      <File FileName="Entites/Slider.cs" />
+      <File FileName="Entites/User.cs" Line="26" Column="6" />
+      <File FileName="WebProgrammingMVC/Data/DatabaseContext.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WebProgrammingMVC" expanded="True">
+            <Node name="Entities" expanded="True" />
+            <Node name="WebProgrammingMVC" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Data" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
