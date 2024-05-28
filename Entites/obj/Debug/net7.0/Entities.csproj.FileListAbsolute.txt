@@ -12,3 +12,4 @@
 /Users/furkanyilmaz/Projects/WebProgrammingMVC/Entites/obj/Debug/net7.0/Entities.pdb
 /Users/furkanyilmaz/Projects/WebProgrammingMVC/Entites/obj/Debug/net7.0/Entities.genruntimeconfig.cache
 /Users/furkanyilmaz/Projects/WebProgrammingMVC/Entites/obj/Debug/net7.0/ref/Entities.dll
+/Users/furkanyilmaz/Projects/WebProgrammingMVC/Entites/obj/Debug/net7.0/Entities.sourcelink.json
