@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using DAL;
+using Microsoft.EntityFrameworkCore;
 using WebProgrammingMVC.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<DatabaseContext>(options => options.UseSqlite());
+builder.Services.AddDbContext<DataBaseContext>(options => options.UseSqlite());
 
 var app = builder.Build();
 

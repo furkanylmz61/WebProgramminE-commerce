@@ -4355,6 +4355,23 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Entities": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.16",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.16",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.16",
+          "Microsoft.EntityFrameworkCore.Sqlite": "7.0.16"
+        },
+        "compile": {
+          "bin/placeholder/DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DAL.dll": {}
+        }
+      },
       "Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -12088,6 +12105,11 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "DAL/1.0.0": {
+      "type": "project",
+      "path": "../DAL/DAL.csproj",
+      "msbuildProject": "../DAL/DAL.csproj"
+    },
     "Entities/1.0.0": {
       "type": "project",
       "path": "../Entites/Entities.csproj",
@@ -12096,6 +12118,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "DAL >= 1.0.0",
       "Entities >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.16",
       "Microsoft.EntityFrameworkCore.Abstractions >= 7.0.16",
@@ -12135,6 +12158,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "/Users/furkanyilmaz/Projects/WebProgrammingMVC/DAL/DAL.csproj": {
+              "projectPath": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/DAL/DAL.csproj"
+            },
             "/Users/furkanyilmaz/Projects/WebProgrammingMVC/Entites/Entities.csproj": {
               "projectPath": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/Entites/Entities.csproj"
             }

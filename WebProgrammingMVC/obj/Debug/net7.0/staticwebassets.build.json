@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XMkHfvXMaAeT17j8SuipyQ0fLmDzIMO6+JNyjuPlQVg=",
+  "Hash": "Ulw8uaPzSR/O7i7hNCRO2ey/g3/ZAwiWr6vC+w6LIx8=",
   "Source": "WebProgrammingMVC",
   "BasePath": "_content/WebProgrammingMVC",
   "Mode": "Default",
@@ -965,6 +965,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Img/product-1.png"
+    },
+    {
+      "Identity": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/wwwroot/Img/profile_icon.png",
+      "SourceId": "WebProgrammingMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/wwwroot/",
+      "BasePath": "_content/WebProgrammingMVC",
+      "RelativePath": "Img/profile_icon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Img/profile_icon.png"
     },
     {
       "Identity": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/wwwroot/Img/tenis.png",

@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebProgrammingMVC", "WebPro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entites\Entities.csproj", "{4369B13C-B906-4C5B-B825-A230587ADA73}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL", "BL\BL.csproj", "{6330F7D3-B40C-46A6-9BEC-0109DCC7218B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{1F58CDC8-9621-4F8E-AE9C-78BA73F4FF21}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{4369B13C-B906-4C5B-B825-A230587ADA73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4369B13C-B906-4C5B-B825-A230587ADA73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4369B13C-B906-4C5B-B825-A230587ADA73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6330F7D3-B40C-46A6-9BEC-0109DCC7218B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6330F7D3-B40C-46A6-9BEC-0109DCC7218B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6330F7D3-B40C-46A6-9BEC-0109DCC7218B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6330F7D3-B40C-46A6-9BEC-0109DCC7218B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F58CDC8-9621-4F8E-AE9C-78BA73F4FF21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F58CDC8-9621-4F8E-AE9C-78BA73F4FF21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F58CDC8-9621-4F8E-AE9C-78BA73F4FF21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F58CDC8-9621-4F8E-AE9C-78BA73F4FF21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
