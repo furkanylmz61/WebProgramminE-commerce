@@ -18,7 +18,6 @@ public class DataBaseContext : DbContext
 
     public DataBaseContext()
     {
-        throw new NotImplementedException();
     }
 
 

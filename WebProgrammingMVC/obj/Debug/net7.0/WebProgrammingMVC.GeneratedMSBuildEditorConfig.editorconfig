@@ -166,8 +166,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/Views/News/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTmV3cy9EZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/Views/News/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTmV3cy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/Views/Shared/_Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19IZWFkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/Views/Shared/_ValidationScriptsPartial.cshtml]

@@ -287,3 +287,5 @@
 /Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/obj/Debug/net7.0/WebProgrammingMVC.sourcelink.json
 /Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/bin/Debug/net7.0/DAL.dll
 /Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/bin/Debug/net7.0/DAL.pdb
+/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/bin/Debug/net7.0/BL.dll
+/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/bin/Debug/net7.0/BL.pdb

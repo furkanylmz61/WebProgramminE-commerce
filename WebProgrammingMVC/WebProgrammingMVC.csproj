@@ -33,6 +33,7 @@
     <Folder Include="wwwroot\Img\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BL\BL.csproj" />
     <ProjectReference Include="..\DAL\DAL.csproj" />
     <ProjectReference Include="..\Entites\Entities.csproj" />
   </ItemGroup>
