@@ -1,4 +1,5 @@
 ﻿using DAL;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using WebProgrammingMVC.Data;
 
@@ -9,6 +10,9 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<DatabaseContext>(options => options.UseSqlite());
 builder.Services.AddDbContext<DataBaseContext>(options => options.UseSqlite());
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(x => {
+    x.LoginPath = "/Admin/Login";
+});
 
 var app = builder.Build();
 
@@ -25,6 +29,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(

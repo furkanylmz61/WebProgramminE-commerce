@@ -6,11 +6,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Entities;
+using Microsoft.AspNetCore.Authorization;
 using WebProgrammingMVC.Data;
 
 namespace WebProgrammingMVC.Areas.Admin.Controllers
 {
-    [Area("Admin")]
+    [Area("Admin"), Authorize]
     public class UserController : Controller
     {
         private readonly DatabaseContext _context;

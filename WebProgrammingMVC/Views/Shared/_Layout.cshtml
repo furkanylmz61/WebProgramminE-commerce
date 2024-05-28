@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="~/WebProgrammingMVC.styles.css" asp-append-version="true" />
 </head>
 <body>
+@*
 @Html.Partial("_Header")
+*@
+@await Component.InvokeAsync("Categories")
 <div class="container">
     <main role="main" class="pb-3">
         @RenderBody()

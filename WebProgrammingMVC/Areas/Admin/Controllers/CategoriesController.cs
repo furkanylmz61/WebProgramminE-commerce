@@ -6,12 +6,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Entities;
+using Microsoft.AspNetCore.Authorization;
 using WebProgrammingMVC.Data;
 using WebProgrammingMVC.Utils;
 
 namespace WebProgrammingMVC.Areas.Admin.Controllers
 {
-    [Area("Admin")]
+    [Area("Admin"), Authorize]
     public class CategoriesController : Controller
     {
         private readonly DatabaseContext _context;

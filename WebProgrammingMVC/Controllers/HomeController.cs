@@ -50,7 +50,6 @@ namespace WebProgrammingMVC.Controllers;
                 try
                 {
                     contact.CreateDate = DateTime.Now;
-                    //var mailgittimi = Utils.MailHelper.SendMail(contact); Mail gönderim kodu
                     var sonuc = contactManager.Add(contact);
                     if (sonuc > 0)
                     {
