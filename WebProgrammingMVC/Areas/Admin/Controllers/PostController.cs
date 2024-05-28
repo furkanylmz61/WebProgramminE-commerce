@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Entities;
 using WebProgrammingMVC.Data;
+using WebProgrammingMVC.Utils;
 
 namespace WebProgrammingMVC.Areas.Admin.Controllers
 {
@@ -49,7 +50,7 @@ namespace WebProgrammingMVC.Areas.Admin.Controllers
         // GET: Admin/Post/Create
         public IActionResult Create()
         {
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Description");
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name");
             return View();
         }
 
@@ -58,15 +59,16 @@ namespace WebProgrammingMVC.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Content,Image,CategoryId")] Post post)
+        public async Task<IActionResult> Create( Post post, IFormFile? Image)
         {
             if (ModelState.IsValid)
             {
+                post.Image = FileHelper.FileLoader(Image);
                 _context.Add(post);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Description", post.CategoryId);
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name", post.CategoryId);
             return View(post);
         }
 
@@ -83,7 +85,7 @@ namespace WebProgrammingMVC.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Description", post.CategoryId);
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name", post.CategoryId);
             return View(post);
         }
 
@@ -92,7 +94,7 @@ namespace WebProgrammingMVC.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Content,Image,CategoryId")] Post post)
+        public async Task<IActionResult> Edit(int id, Post post,IFormFile? Image, bool cbResimSil )
         {
             if (id != post.Id)
             {
@@ -103,6 +105,17 @@ namespace WebProgrammingMVC.Areas.Admin.Controllers
             {
                 try
                 {
+                    
+                    
+                    if (cbResimSil )
+                    {
+                        FileHelper.FileTerminator(post.Image);
+                        post.Image = string.Empty;
+                    }
+                    if (Image != null)
+                    {
+                        post.Image = FileHelper.FileLoader(Image);
+                    }
                     _context.Update(post);
                     await _context.SaveChangesAsync();
                 }
@@ -119,7 +132,7 @@ namespace WebProgrammingMVC.Areas.Admin.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Description", post.CategoryId);
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name", post.CategoryId);
             return View(post);
         }
 

@@ -181,6 +181,18 @@
       "PackagePath": "staticwebassets/WebProgrammingMVC.bundle.scp.css"
     },
     {
+      "Id": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/wwwroot/Img/admin.png",
+      "PackagePath": "staticwebassets/Img/admin.png"
+    },
+    {
+      "Id": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/wwwroot/Img/product-1.png",
+      "PackagePath": "staticwebassets/Img/product-1.png"
+    },
+    {
+      "Id": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/wwwroot/Img/tenis.png",
+      "PackagePath": "staticwebassets/Img/tenis.png"
+    },
+    {
       "Id": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/wwwroot/Templates/admin/.github/workflows/main.yml",
       "PackagePath": "staticwebassets/Templates/admin/.github/workflows/main.yml"
     },

@@ -14,7 +14,7 @@ namespace Entities
         [StringLength(150)]
         public string Link { get; set; }
         [Display(Name = "Resim")]
-        public string Image { get; set; }
+        public string? Image { get; set; }
     }
 }
 

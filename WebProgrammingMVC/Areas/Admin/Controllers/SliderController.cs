@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Entities;
 using WebProgrammingMVC.Data;
+using WebProgrammingMVC.Utils;
 
 namespace WebProgrammingMVC.Areas.Admin.Controllers
 {
@@ -57,10 +58,11 @@ namespace WebProgrammingMVC.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Description,Link,Image")] Slider slider)
+        public async Task<IActionResult> Create(Slider slider, IFormFile? Image)
         {
             if (ModelState.IsValid)
             {
+                slider.Image = FileHelper.FileLoader(Image);
                 _context.Add(slider);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -89,7 +91,7 @@ namespace WebProgrammingMVC.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description,Link,Image")] Slider slider)
+        public async Task<IActionResult> Edit(int id, Slider slider, IFormFile? Image, bool cbResimSil)
         {
             if (id != slider.Id)
             {
@@ -100,6 +102,16 @@ namespace WebProgrammingMVC.Areas.Admin.Controllers
             {
                 try
                 {
+                    if (cbResimSil )
+                    {
+                        FileHelper.FileTerminator(slider.Image);
+                        slider.Image = string.Empty;
+                    }
+                    if (Image != null)
+                    {
+                        slider.Image = FileHelper.FileLoader(Image);
+                    }
+                    
                     _context.Update(slider);
                     await _context.SaveChangesAsync();
                 }

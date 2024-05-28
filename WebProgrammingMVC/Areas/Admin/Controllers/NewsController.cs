@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Entities;
 using WebProgrammingMVC.Data;
+using WebProgrammingMVC.Utils;
 
 namespace WebProgrammingMVC.Areas.Admin.Controllers
 {
@@ -57,10 +58,11 @@ namespace WebProgrammingMVC.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Content,Image")] News news)
+        public async Task<IActionResult> Create(News news, IFormFile? Image)
         {
             if (ModelState.IsValid)
             {
+                news.Image = FileHelper.FileLoader(Image);
                 _context.Add(news);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -89,7 +91,7 @@ namespace WebProgrammingMVC.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Content,Image")] News news)
+        public async Task<IActionResult> Edit(int id, News news, IFormFile? Image, bool cbResimSil)
         {
             if (id != news.Id)
             {
@@ -100,6 +102,18 @@ namespace WebProgrammingMVC.Areas.Admin.Controllers
             {
                 try
                 {
+                    
+                    if (cbResimSil )
+                    {
+                        FileHelper.FileTerminator(news.Image);
+                        news.Image = string.Empty;
+                    }
+                    if (Image != null)
+                    {
+                        news.Image = FileHelper.FileLoader(Image);
+                    }
+
+                   
                     _context.Update(news);
                     await _context.SaveChangesAsync();
                 }

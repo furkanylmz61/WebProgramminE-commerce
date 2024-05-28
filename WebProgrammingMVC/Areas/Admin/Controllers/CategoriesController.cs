@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Entities;
 using WebProgrammingMVC.Data;
+using WebProgrammingMVC.Utils;
 
 namespace WebProgrammingMVC.Areas.Admin.Controllers
 {
@@ -49,6 +50,7 @@ namespace WebProgrammingMVC.Areas.Admin.Controllers
         // GET: Admin/Categories/Create
         public IActionResult Create()
         {
+            ViewData["ParentId"] = new SelectList(_context.Categories, "Id", "Name");
             return View();
         }
 
@@ -57,10 +59,11 @@ namespace WebProgrammingMVC.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,ParentId,Name,Description,Image")] Category category)
+        public async Task<IActionResult> Create(Category category, IFormFile? Image)
         {
             if (ModelState.IsValid)
             {
+                category.Image = FileHelper.FileLoader(Image);
                 _context.Add(category);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -81,6 +84,7 @@ namespace WebProgrammingMVC.Areas.Admin.Controllers
             {
                 return NotFound();
             }
+            ViewData["ParentId"] = new SelectList(_context.Categories, "Id", "Name");
             return View(category);
         }
 
@@ -89,7 +93,7 @@ namespace WebProgrammingMVC.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,ParentId,Name,Description,Image")] Category category)
+        public async Task<IActionResult> Edit(int id,  Category category,  IFormFile? Image, bool cbResimSil)
         {
             if (id != category.Id)
             {
@@ -100,6 +104,15 @@ namespace WebProgrammingMVC.Areas.Admin.Controllers
             {
                 try
                 {
+                    if (cbResimSil )
+                    {
+                        FileHelper.FileTerminator(category.Image);
+                        category.Image = string.Empty;
+                    }
+                    if (Image != null)
+                    {
+                        category.Image = FileHelper.FileLoader(Image);
+                    }
                     _context.Update(category);
                     await _context.SaveChangesAsync();
                 }
