@@ -189,8 +189,52 @@
       "PackagePath": "staticwebassets/Img/admin.png"
     },
     {
+      "Id": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/wwwroot/Img/cocuk.png",
+      "PackagePath": "staticwebassets/Img/cocuk.png"
+    },
+    {
+      "Id": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/wwwroot/Img/erkek.png",
+      "PackagePath": "staticwebassets/Img/erkek.png"
+    },
+    {
+      "Id": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/wwwroot/Img/erkekgomlek.png",
+      "PackagePath": "staticwebassets/Img/erkekgomlek.png"
+    },
+    {
+      "Id": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/wwwroot/Img/erkekpantolon.png",
+      "PackagePath": "staticwebassets/Img/erkekpantolon.png"
+    },
+    {
+      "Id": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/wwwroot/Img/erkekslider.png",
+      "PackagePath": "staticwebassets/Img/erkekslider.png"
+    },
+    {
+      "Id": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/wwwroot/Img/esofman.png",
+      "PackagePath": "staticwebassets/Img/esofman.png"
+    },
+    {
+      "Id": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/wwwroot/Img/etek.png",
+      "PackagePath": "staticwebassets/Img/etek.png"
+    },
+    {
       "Id": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/wwwroot/Img/images.png",
       "PackagePath": "staticwebassets/Img/images.png"
+    },
+    {
+      "Id": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/wwwroot/Img/indirim.png",
+      "PackagePath": "staticwebassets/Img/indirim.png"
+    },
+    {
+      "Id": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/wwwroot/Img/kadın.png",
+      "PackagePath": "staticwebassets/Img/kadın.png"
+    },
+    {
+      "Id": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/wwwroot/Img/kirmizielbise.png",
+      "PackagePath": "staticwebassets/Img/kirmizielbise.png"
+    },
+    {
+      "Id": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/wwwroot/Img/pijama.png",
+      "PackagePath": "staticwebassets/Img/pijama.png"
     },
     {
       "Id": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/wwwroot/Img/product-1.png",
@@ -213,12 +257,32 @@
       "PackagePath": "staticwebassets/Img/slider.png"
     },
     {
+      "Id": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/wwwroot/Img/slider123.png",
+      "PackagePath": "staticwebassets/Img/slider123.png"
+    },
+    {
+      "Id": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/wwwroot/Img/slider2.png",
+      "PackagePath": "staticwebassets/Img/slider2.png"
+    },
+    {
       "Id": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/wwwroot/Img/tenis.png",
       "PackagePath": "staticwebassets/Img/tenis.png"
     },
     {
+      "Id": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/wwwroot/Img/tulum.png",
+      "PackagePath": "staticwebassets/Img/tulum.png"
+    },
+    {
       "Id": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/wwwroot/Img/why-choose-us-img.jpg",
       "PackagePath": "staticwebassets/Img/why-choose-us-img.jpg"
+    },
+    {
+      "Id": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/wwwroot/Img/yaz.png",
+      "PackagePath": "staticwebassets/Img/yaz.png"
+    },
+    {
+      "Id": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/wwwroot/Img/yenisezon.png",
+      "PackagePath": "staticwebassets/Img/yenisezon.png"
     },
     {
       "Id": "/Users/furkanyilmaz/Projects/WebProgrammingMVC/WebProgrammingMVC/wwwroot/Templates/admin/.github/workflows/main.yml",
